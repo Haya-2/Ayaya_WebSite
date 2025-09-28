@@ -1,0 +1,92 @@
+@import url("fontawesome-all.min.css");
+@font-face {
+  font-family: "Stars";
+  src: url(Stars.ttf) format("truetype");
+}
+@font-face {
+  font-family: "AutoShel";
+  src: url(Authentic_Sheldon.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Afterglow";
+  src: url(Afterglow_Regular.ttf) format("truetype");
+}
+html body {
+  padding: 0;
+  margin: 0;
+  height: 250%;
+  color: #495867;
+  font-family: "Stars", cursive;
+}
+
+header {
+  background: #577399;
+  padding: 1em;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  padding: 0;
+  margin: 0;
+}
+header nav .nav-links li a {
+  color: #f7f7ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+header nav .nav-links li a:hover {
+  color: #bdd5ea;
+}
+
+main {
+  padding: 2em;
+  text-align: center;
+}
+main .welcome h1 {
+  font-size: 2.5rem;
+  color: #bdd5ea;
+}
+main .welcome p {
+  font-size: 1.2rem;
+  color: #577399;
+}
+
+footer {
+  background: #bdd5ea;
+  color: #577399;
+  padding: 1em;
+  text-align: center;
+}
+footer section {
+  text-align: center;
+}
+footer .icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  color: #fe5f55;
+}
+footer .icons li {
+  margin: 0 10px;
+}
+footer .icons li a {
+  text-decoration: none;
+  color: #fe5f55;
+}
+footer .icons li a:hover {
+  color: #577399;
+}
+footer .copyright {
+  color: #495867;
+}
+
+/*# sourceMappingURL=index.css.map */
