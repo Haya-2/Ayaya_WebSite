@@ -1,0 +1,38 @@
+@keyframes barre {
+  from {
+    background-color: red;
+    width: 200px;
+  }
+  50% {
+    background-color: #ffff56;
+    color: black;
+    width: 600px;
+  }
+  to {
+    background-color: lime;
+    color: aliceblue;
+    width: 1000px;
+  }
+}
+.faire {
+  color: aliceblue;
+  width: 200px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: black;
+  animation-name: barre;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.faire:hover {
+  animation-play-state: paused;
+}
+
+/*# sourceMappingURL=barre.css.map */

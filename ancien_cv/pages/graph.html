@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio Aline</title>
+    <meta charset="descriptions" content="">
+    <meta charset="keywords" content="">
+    <meta charset="author" content="SIROT Aline">
+    <link rel="stylesheet" type="text/css" href="../style/index.css">
+  </head>
+
+  <body class="">
+    <header>
+        <nav>
+          <ul class="navbar">
+            <li><a href="../index.html" class="liennav">Accueil</a></li>
+            <li><a href="dev.html" class="liennav">Développement</a></li>
+            <li><a href="graph.html" class="liennav">Graphisme</a></li>
+            <li><a href="contacts.pdf" class="liennav passous" target="_blank" rel="noopener noreferrer">Contacts</a></li>
+          </ul>    
+        </nav>
+      </header>
+
+    <main>
+      <section class="prod">
+        <span class="titre">
+          <h2>•  . ━━━━━ Graphisme ━━━━━ .  •</h2>
+          
+        </span>
+        <div class="descriptions">
+          <h3> Logiciels : </h3>
+          <ul>
+            <li> IbisPaint X : Version gratuite de IbisPaint, un logiciel de dessin disponible sur Android et iOS. Les fonctions payantes deviennent gratuites pendant 7 heures en regardant des pubs, ce qui en fait un très bon logociel de dessin pour téléphones et tablette, complétement gratuit. </li><br>
+            <li> Krita : Logiciel de dessin (et beaucoup d'autres fonctions) Linux puis Windows et MacOS puis Android gratuit et Open Source. Portabilité des fichiers avec PhotoShop (et donc Procreate). </li><br>
+            <li> Paint Tool SAI (v1 et v2) : Logiciel de dessin payant pour Windows. La version 1 ne fonctionnait pas avec ma tablette graphique et la version 2 ne fonctionnait plus dû aux caractéristiques de mon ordinateur à l'époque. Je l'ai donc abandonné pour passer définivement sur Krita qui offrait bien plus de fonctionnalités gratuitement. SAI est bien pour les débutants car il est très simple et compréhensibles pour des néophytes. </li><br>
+            <li> PhotoShop : Logiciel d'edition, de retouche et de dessin pour MacOS puis Windows de la suite Adobe. Mon utilisation était principalement pour des retouches de couleur ou de filtre, mais aussi corriger de petites erreurs. </li><br>
+            <li> InDesign : Logiciel de maquettage pour impression, distribué pour MacOS puis Windows de la suite Adobe. Mon utilisation était pour créer des maquettes mais aussi des motifs, ce qui est plus simple et intuitif que sur PhotoShop. </li><br>
+            <li> Procreate : Logiciel de dessin payant sur iOS (et iPadOS). Un des meilleurs logiciel pour iPad actuellement, malgrès le prix. Beaucoup de fonctionnalités et portabilité avec les logiciels de la suite Adobes (PhotoShop, InDesign, Adobe XD, ...).  </li><br>
+          </ul>
+        </div>
+
+        <div id="imageInfo" class="modal" data-info="Clickez sur une image pour afficher plus d'informations...">Clickez sur une image pour afficher plus d'informations ...</div>
+
+        <div class="list">
+          
+          <div class="pic image-item gpic1" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info=" ">azertyuiop</p>
+  
+            </div>
+          </div>
+  
+          <div class="pic image-item gpic1" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info=" ">azertyuiop</p>
+  
+            </div>
+          </div>
+  
+          <div class="pic image-item gpic1" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info=" ">azertyuiop</p>
+  
+            </div>
+          </div>
+  
+          </div>
+
+        <div class="list">
+          
+        <div class="pic image-item gpiclinelessayaya" onclick="showImageInfo(this)">
+          <div class="pic-detail">
+            <p class="txt" data-info=" ">azertyuiop</p>
+
+          </div>
+        </div>
+
+        <div class="pic image-item gpicvtuber2" onclick="showImageInfo(this)">
+          <div class="pic-detail">
+            <p class="txt" data-info="Dessin d'un personnage animable (visage) pour 'veadotube mini', logiciel d'animation simple d'image (passer d'une image à une autre à partir d'un son ou d'un touche). Réalisé dans le cadre d'un PNGtuber, peersonnage animé simple en 2D qui stream sur internet. Logiciel : IbisPaint X, Procreate, veadotube mini. ">Personnage Animé pour stream (PNGtuber) version 2</p>
+
+          </div>
+        </div>
+
+        <div class="pic image-item gpicpixelartayaya" onclick="showImageInfo(this)">
+          <div class="pic-detail">
+            <p class="txt" data-info=" ">azertyuiop</p>
+
+          </div>
+        </div>
+
+        </div>
+
+        <div class="list">
+
+          <div class="pic image-item gpicvtuber" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Dessin d'un personnage animable (bouches uniquement) pour 'veadotube mini', logiciel d'animation simple d'image (passer d'une image à une autre à partir d'un son ou d'un touche). Réalisé dans le cadre d'un PNGtuber, peersonnage animé simple en 2D qui stream sur internet. Logiciel : IbisPaint X, Krita, veadotube mini. ">Personnage Animé pour stream (PNGtuber)</p>
+
+            </div>
+          </div>
+          <div class="pic image-item gpic2" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Dessin d'un Original Charater nommé Haya. Réalisé pour un Post Instagram (photo de profil). Logiciels : Krita, PhotoShop">OC - Haya</p>
+
+            </div>
+          </div>
+          <div class="pic image-item gpicchibichi" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Dessin du personnage guide (principal) du jeu 'Elthéria', réalisé dans cadre de mon projet tutoré de DUT MMI en 2021/22. Logiciels : IbisPaint X, Krita">Chibi-Chi - Personnage principal du jeu Elthéria</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="list">
+          <div class="pic image-item gpic1" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="AutoPortrait. Réalisé dans le cadre d'un cours d'Infographie. Logiciels : IbisPaint X, PhotoShop">Autoportrait</p>
+
+            </div>
+          </div>
+          <div class="pic image-item gpicmillia" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Commission. Fan Art de Millia du jeu Guilty Gear -Strive-. Réalisé dans le cadre d'une commande rémunérée pour une icône. Logiciels : IbisPaint X, Krita, PhotoShop, Krita Animation">Millia - Commission d'icône</p>
+
+            </div>
+          </div>
+          <div class="pic image-item gpic3" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Fan Art de Albedo dans le jeu «Genshin Impact». Réalisé dans le cadre d'un concours.">FanArt : Genshin Impact (Albedo)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="pic image-item gpic4" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Fan Art du Jeu «Hollow Knight». Réalisé dans l'optique d'améliorer mes dessins environnements. Logiciels : Krita, Paint Tool SAI">FanArt : Hollow Knight</p>
+
+            </div>
+          </div>
+          <div class="pic image-item gpic5" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Canette Sakurayu Version 1. Réalisé dans le cadre d'un cours d'Infographie. Logiciels : PhotoShop, InDesign">Canette Sakurayu 1</p>
+
+            </div>
+          </div>
+          <div class="pic image-item gpic6" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Canette Sakurayu Version 2. Réalisé dans le cadre d'un cours d'Infographie. Logiciels : PhotoShop, InDesign">Canette Sakurayu 2</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="pic image-item gpic7" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Fan Art de Hornet dans le jeu «Hollow Knight». Réalisé dans le cadre d'un post Instagram. Logiciel :  Krita">FanArt : Hollow Knight (Hornet)</p>
+
+            </div>
+          </div>
+          <div class="pic image-item gpic8" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Fan Art de The Hollow Knight dans le jeu «Hollow Knight». Réalisé dans le cadre d'unpost Instagram. Logiciel :  Krita">FanArt : Hollow Knight (The Hollow Knight)</p>
+
+            </div>
+          </div>
+          <div class="pic image-item gpic9" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Fan Art de LostKin dans le jeu «Hollow Knight». Réalisé pour servir de fond d'écran de Téléphone. Logiciel :  Krita">FanArt : Hollow Knight (LostKin)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="pic image-item gpic10" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Fan Art de Diona dans le jeu «Genshin Impact». Réalisé pour célébrer son Anniversaire. Logiciels : Krita, InDesign">FanArt : Genshin Impact (Diona)</p>
+
+            </div>
+          </div>
+          <div class="pic image-item gpic11" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Fan Art de Venti dans le jeu «Genshin Impact». Réalisé pour un post Instagram. Logiciels : Krita, PhotoShop">FanArt : Genshin Impact (Venti)</p>
+
+            </div>
+          </div>
+          <div class="pic image-item gpic12" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Test pour un Logo puis un Tatouage. Le dessin central en Noir & Blanc est le tatouage en question. Logiciel : IbisPaint X">Test Logo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="pic image-item gpic13" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Essaie de Couleurs pour les yeux (Violet). Réalisé pour servir de référence au traditionnel.">Oeil Violet</p>
+
+            </div>
+          </div>
+          <div class="pic image-item gpic14" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Essaie de Couleurs pour les yeux (Orange). Réalisé pour servir de référence au traditionnel.">Oeil Orange</p>
+
+            </div>
+          </div>
+          <div class="pic image-item gpic15" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Essaie de Couleurs pour les yeux (Vert). Réalisé pour servir de référence au traditionnel.">Oeil Vert</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="pic image-item gpic16" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Fan Art de Vyper, Original Charater. Réalisé dans le cadre d'une commande rémunérée.">OC - Vyper</p>
+
+            </div>
+          </div>
+          <div class="pic image-item gpic17" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Obsidian Protect (Mise en page Logo + Texte et Polices). Réalisé dans le cadre d'un cours de Création d'Entreprise. Logiciels : PhotoShop, InDesign">Visuel Obsidian Protect</p>
+
+            </div>
+          </div>
+          <div class="pic image-item gpic18" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Fan Art du groupe «Naughty Busters» dans le projet «Hypnosis Microphone». Réalisé dans le cadre du Inktober (2021).">FanArt : Hypnosis Mic (Naughty Busters)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="pic image-item gpic19" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Fan Art des personnages Dice Arisugawa (有栖川 帝統) et Saburo Yamada (山田 三郎) dans le projet «Hypnosis Microphone». Réalisé dans le cadre du Inktober (2021).">FanArt : Hypnosis Mic (Dice &amp; Saburo)</p>
+
+            </div>
+          </div>
+          <div class="pic image-item gpic20" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Fan Art du groupe «Buster Bros» dans le projet «Hypnosis Microphone». Réalisé dans le cadre du Inktober. (2021)">FanArt : Hypnosis Mic (Buster Bros)</p>
+
+            </div>
+          </div>
+          <div class="pic image-item gpic21" onclick="showImageInfo(this)">
+            <div class="pic-detail">
+              <p class="txt" data-info="Fan Art du personnage Ramuda Amemura (飴村乱数) dans le projet «Hypnosis Microphone». Réalisé dans le cadre du Inktober. (2021)">FanArt : Hypnosis Mic (Ramuda)</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="foot">
+      <ul class="">
+        <li><a href="../index.html" class="passous">Accueil</a></li>
+        <li><a href="dev.html" class="passous">Developpement</a></li>
+        <li><a href="graph.html" class="passous">Graphisme</a></li>
+        <li><a href="contacts.pdf" class="passous" target="_blank" rel="noopener noreferrer">Contacts</a></li>
+        <li><a href="https://www.instagram.com/haya2_pallyly/" class="passous" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://twitter.com/AyayaHaya2" class="passous" target="_blank" rel="noopener noreferrer">Twitter (X)</a></li>
+      </ul>
+      <p class="copyright">Copyright © 2022 - Made by SIROT Aline</p>
+    </footer>
+  </body>
+  <script type="text/javascript" src="../style/index.js"></script>
+</html>

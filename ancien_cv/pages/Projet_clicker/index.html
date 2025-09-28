@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>HypMic Clicker (Aline)</title>
+</head>
+<body onload="loading()">
+
+    <div class="haut">
+        <div class="droite">
+            <div class="time">
+                Temps de jeu (secondes) : <br>
+            <span class="time" id="compt">
+            </span>
+            </div>
+        </div>
+        <div class="notes">
+            Nombre de Notes accumulées : <div id="clics"></div>
+        </div>
+    </div>
+    
+
+    <div id="main" onclick="clics()"><img onclick="showImage()" id="img"></div>
+
+
+    
+        <div class="parent">
+            <div class="base" id="B1">
+                <button onclick="Objet1()" id="base1" disabled>-20 / +1</button>
+                <div>
+                    Base 1 : <span id="clic1"></span>
+                </div>
+                
+            </div>
+            
+            <div class="base" id="B2">
+                <button onclick="Objet2()" id="base2" disabled>-100 / +5</button>
+                <div>
+                    Base 2 : <span id="clic2"></span>
+                </div>
+            </div>
+
+            <div class="base" id="B3">
+                <button onclick="Objet3()" id="base3" disabled>-500 / +10</button>
+                <div>
+                    Base 3 : <span id="clic3"></span> 
+                </div>
+            </div>
+        </div>
+    
+ <br>
+    <div class="center">
+        <div id="menu">
+            <button id="chut" onclick="Chut()">Mode Silencieux</button>
+            <button id="schut" onclick="StopChut()">Mode Son</button>
+            <button id="themeautre" onclick="BackTheme()">Apparence</button>
+            <button id="themedefault" onclick="DefaultTheme()">Apparence</button>
+            <button id="themed" onclick="Special()" disabled> -10 000 / DarkMode </button>
+            <button id="themel" onclick="BackTheme()">Normal Mode</button>
+            <button id="new" onclick="Reini()">Nouvelle Partie</button> 
+            
+            <!--MODE DEVELOPPEUR : -->
+            <!--<button onclick="Plus()"><span id="triche">+ 1000</span></button>-->
+        </div>
+        <div>
+            <button id="help" onclick="Help()">?</button>
+            <button id="God" onclick="GodLike()" disabled>GoD</button>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>

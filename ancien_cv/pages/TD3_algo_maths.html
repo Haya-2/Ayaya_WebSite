@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test Droites / Intersection</title>
+    </head>
+    <body>
+        <p>Voici un canvas sur lequel vous devez cliquez deux fois! Allez dans "examiner l'élément" puis dans "console" pour avoir toutes les information relatives à vos clicks et à l'intersection de vos deux droites.</p>
+    <canvas id="mon_canvas" style="border:2px dashed rgb(216, 60, 120)" width="500" height="500" onclick="cliquer(event)" >
+    </canvas>
+        <script type="text/javascript">
+        let X1,Y1,X2,Y2,X3,Y3,k,b,e,f;
+        function cliquer(event){
+            let c = document.getElementById("mon_canvas");
+            let ctx = c.getContext("2d");
+                if (X1 == undefined && Y1 == undefined){
+                    X1 = event.offsetX;
+                    Y1 = event.offsetY;
+                }
+                else if (X2 == undefined && Y2 == undefined){
+                    X2 = event.offsetX;
+                    Y2 = event.offsetY;
+                }
+                if (X1 && Y1 && X2 && Y2){
+                    ctx.beginPath(); // Début du chemin
+                    ctx.moveTo(0,0);
+                    ctx.lineTo(X1,Y1);
+                    ctx.closePath(); // Fermeture du chemin
+                    ctx.stroke() ; // Fait le trait
+                    
+                    ctx.beginPath();
+                    ctx.moveTo(500,0)
+                    ctx.lineTo(X2,Y2);
+                    ctx.closePath();
+                    ctx.stroke();
+  
+                    console.log("Les points A et B ont pour coordonnées A("+ X1 +";"+ Y1 + ") et B("+ X2 +";"+ Y2 +")");
+                    b = -X1; 
+                    e = -Y1 * 500;
+                    f = Y1 * X2 - 500 * Y1 + b * Y2;
+                    k = e / f;
+                    console.log("k = "+ k +" et b = "+ b +" et e = "+ e +" et f = "+ f );
+                    X3 = k * (X2 - 500) +500;
+                    Y3 = k * Y2;
+                    console.log("Le point M à pour coordonnées M("+ X3 +";"+ Y3 +")");
+                }
+                ctx.beginPath();
+                ctx.arc(X3,Y3,4,0,Math.PI*2,false);
+                ctx.stroke();
+            }
+        </script>
+    </body>
+</html>

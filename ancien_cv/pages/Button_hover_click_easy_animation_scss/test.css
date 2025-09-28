@@ -1,0 +1,21 @@
+button {
+  width: 200px;
+  height: 50px;
+  color: black;
+  background-color: aliceblue;
+  border-color: aqua;
+  border-style: dashed;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+button:hover {
+  color: aliceblue;
+  background-color: black;
+  border-color: aqua;
+}
+button:active {
+  width: 400px;
+  height: 100px;
+}
+
+/*# sourceMappingURL=test.css.map */

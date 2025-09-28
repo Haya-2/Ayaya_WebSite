@@ -1,0 +1,24 @@
+@mixin before ($borderStyle, $borderradius){
+    // borderstyle et borderradius sont des variables qui peuvent être modifiées dans le scss principal. Il faut les déclarer entre
+    // parenthèse dans le mixin (pas de déclarations au préalable), et utilisé dans ce même mixin. il faut TOUT ré-écrire dans
+    // les parenthèse du scss principal.
+    width: $button_width;
+    height: $button_height;
+    color: $color_black;
+    background-color: $color_alice;
+    border-color: $color_aqua;
+    border-style: $borderStyle;
+    border-radius: $borderradius;
+    transition-duration: 0.4s;
+}
+
+@mixin after {
+    color: $color_alice;
+    background-color: $color_black;
+    border-color: $color_aqua;
+}
+
+@mixin click {
+    width: $button_width_click;
+    height: $button_height_click;
+}

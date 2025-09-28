@@ -1,0 +1,506 @@
+/*Déclarations importées*/
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+@import "variable.scss";
+
+@font-face {
+    font-family: "Stars";
+    src: url(Stars.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "AutoShel";
+    src: url(Authentic_Sheldon.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Afterglow";
+    src: url(Afterglow_Regular.ttf) format("truetype");
+}
+/* Déclarations des images */
+.dpic1, .dpic2, .dpic3, .gpic1, .gpic2, .gpic3, .gpic4, .gpic5, .gpic6, .gpic7, .gpic8, .gpic9, .gpic10, .gpic11, .gpic12, .gpic13, .gpic14, .gpic15, .gpic16, .gpic17, .gpic18, .gpic19, .gpic20, .gpic21 {
+  @extend .image-item; /* Utilisez la classe commune */
+}
+
+/*Déclarations générales des pages*/
+html{
+    body {
+    padding: 0;
+    margin: 0;
+    height: 250%;
+    background: $lighter;
+    color: $dark;
+    font-family: 'Stars', cursive;
+    }
+}
+
+p{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+/*Haut de pages (identiques)*/
+
+nav{
+    padding-top: 10px;
+    background: $rosemid;
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    flex-direction: row;
+}  
+
+.navbar {
+    position: relative;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    list-style-type: none;
+    float: right;
+    padding-top: 20px;
+    font-size: 20%;
+}
+
+nav ul {
+    display: flex;
+    float: right;
+    flex-direction: row;
+    justify-content: right;
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+.passous {
+    text-decoration: none;
+}
+
+/*Tous les liens (déclarations)*/
+
+.liennav {
+    cursor: pointer;
+    margin: 20px;
+    margin-right: 45px;
+    font-size: 35px;
+    color: $lighter;  
+    &:hover {
+        color: $turquoise;
+    }
+}
+
+.liendev {
+    color: $turquoise;  
+        &:hover {
+        color: $rosel;
+    }
+    font-size: 30px;
+    font-family: 'Afterglow', serif;
+    margin-bottom: 2px;
+}
+
+#Homebis {
+    display: none;
+}
+
+#Home {
+    display: block;
+    &:hover {
+        display: none;
+        transition: 1s ease;
+    }
+    //&:hover #Homebis {
+    //    display: block;
+    //}
+}
+
+
+
+
+/*Main*/
+
+h2 {
+    font-size: 55px;
+    color: $rosemid;
+}
+
+#intro {
+    font-size: 60px;
+}
+
+#outro {
+    font-family: 'Afterglow', serif;
+    font-size: 22px;
+}
+
+.texte {
+    font-family: 'Afterglow', serif;
+    font-size: 20px;
+    color: $rosemid;
+}
+
+/*Déclarations Articles*/
+
+.bgparentbis {
+    float: left;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.bgparent {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/GreenpathBG.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+
+section {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 95%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2%;
+    margin-left: 2%;
+    padding : 6px 6px 6px 6px;
+    background-color: $fond;
+}
+
+
+
+/*Articles*/
+
+.prod {
+    max-width: 98%;
+    height: auto;
+    display: flex;
+    text-align: center;
+}
+
+.pic {
+    position: relative;
+    background-position: center;
+    min-height: 400px;
+    width: auto;
+    margin: 20px;
+    flex: 1;
+}
+
+.pica {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    min-height: 400px;
+    min-width: 300px;
+    margin: 10px;  
+    flex: 1;
+}
+
+.picb {
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    height: auto;
+    min-height: 300px;
+    min-width: 300px;
+}
+
+.titre {
+    display: flex;
+    justify-content: center;
+    height: max-content;
+}
+
+.voirplus {
+    font-size: 40px;
+    padding-bottom: 7px;
+    text-decoration: none;
+    text-decoration: underline;
+    color: $rosel;
+    &:hover {
+        color: $rosepastel;
+    }
+    margin-bottom: 0px;
+}
+
+.alinea {
+    text-indent: 25px;
+}
+
+.descriptions {
+    font-family: 'Afterglow', serif;
+}
+
+.pic-detail {
+    position: relative;
+    opacity: 0;
+    background-color: $rosemid;
+    height: 100%;
+    width: 100%;
+    transition: 0.7s ease;
+    a {
+        color: $lighter;
+        background-color: $rosemid;
+    }
+}
+
+.txt {
+    color: $lighter;
+    position: relative;
+    font-size: 65px;
+    margin-top: 0;
+    padding-top: 35%;
+    text-align: center;
+}
+
+.list{
+    display: flex; 
+    flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 1000px){
+    .list {
+    flex-direction: column;
+    }
+
+    .pic-detail {
+        height: 400px;
+    }
+
+}
+
+/*
+.legende {
+    font-family: 'Mermaid', sans-serif;;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-left: 0%;
+    bottom: 0;
+    background-color: rgba(24,48,86,0.85);
+}*/
+/*
+@media screen and (max-width: 1000px){
+    .legende {
+    display: none;
+    }
+}*/
+
+.centre {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $dark;
+    font-size: 150%;
+    background-color: rgba($color: #e9e9e9, $alpha: 0.50);
+    flex-direction: column;
+    h2 {
+        align-items: baseline;
+    }
+}
+
+/* Classe commune pour les éléments d'image */
+.image-item {
+    background-repeat: no-repeat;
+    background-size: contain;
+    &:hover .pic-detail {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+}
+
+/* Arrière-plan spécifique à chaque classe */
+.gpiclinelessayaya {
+    background-image: url(../images/Lineless_ayaya.png);
+}
+
+.gpicpixelartayaya {
+    background-image: url(../images/pixelart_ayaya_book.png);
+}
+
+.gpicvtuber2 {
+    background-image: url(../images/AYAYA_basic.PNG);
+}
+
+.gpicvtuber {
+    background-image: url(../images/Basic.png);
+}
+
+.gpicchibichi {
+    background-image: url(../images/Chibi-chi_Display.png);
+}
+
+.gpicmillia {
+    background-image: url(../images/Icone_endspeech_[A]_00000.png);
+}
+
+.dpic1 {
+    background-image: url(../images/dpic1.jpg);
+}
+
+.dpic2 {
+    background-image: url(../images/dpic2.jpg);
+}
+
+.dpic3 {
+    background-image: url(../images/dpic3.jpg);
+}
+
+.gpic1 {
+    background-image: url(../images/Aline_Autoportrait.png);
+}
+
+.gpic2 {
+    background-image: url(../images/Haya21.png);
+}
+
+.gpic3 {
+    background-image: url(../images/Albedo.jpg);
+}
+
+.gpic4 {
+  background-image: url(../images/Greenpath.png);
+}
+
+.gpic5 {
+  background-image: url(../images/PrezSAKURAYUv1.jpg);
+}
+
+.gpic6 {
+  background-image: url(../images/PrezSAKURAYUv2.jpg);
+}
+
+.gpic7 {
+  background-image: url(../images/Hornet1.png);
+}
+
+.gpic8 {
+  background-image: url(../images/TheHollowKnight.png);
+}
+
+.gpic9 {
+  background-image: url(../images/Lifeblood1Kin2.png);
+}
+
+.gpic10 {
+  background-image: url(../images/DionaBDayv1.1.png);
+}
+
+.gpic11 {
+  background-image: url(../images/Ventilatte2.png);
+}
+
+.gpic12 {
+  background-image: url(../images/tatoo.png);
+}
+
+.gpic13 {
+  background-image: url(../images/oeil_violet.jpg);
+}
+
+.gpic14 {
+  background-image: url(../images/oeil_orange.jpg);
+}
+
+.gpic15 {
+  background-image: url(../images/oeil_vert.jpg);
+}
+
+.gpic16 {
+  background-image: url(../images/vyper.jpg);
+}
+
+.gpic17 {
+  background-image: url(../images/Visuel_Obsidian_Protect.png);
+}
+
+.gpic18 {
+  background-image: url(../images/Naughty_Busters.jpg);
+}
+
+.gpic19 {
+  background-image: url(../images/Hobbie_Dice_Saburo.jpg);
+}
+
+.gpic20 {
+  background-image: url(../images/Buster_bros.jpg);
+}
+
+.gpic21 {
+  background-image: url(../images/Ramuda_ARB_Inktober.jpg);
+}
+
+/* Styles pour la boîte modale */
+.modal {
+    display: block;
+    position:sticky;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    overflow: auto;
+    background-color: $rosemid;
+    border: 1px solid $rosel;
+    color: white;
+    font-size: 30px;
+    font-family: 'Afterglow', serif;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+        color: #000;
+    }
+}
+
+/*Pied de page*/
+
+footer {
+    float: right;
+    font-size: 40px;
+    width: 100%;
+    height: 160px;
+    margin-top: 1%;
+    margin-bottom: 0;
+    background-color: $rosemid;
+    padding-bottom: 10px;
+    width: 100%;
+    color: $light;
+    a {
+        color: $lighter;  
+        &:hover {
+            color: $turquoise;
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+}
+
+.copyright {
+    font-size: 22px;
+    font-family: 'Afterglow', serif;
+}
+

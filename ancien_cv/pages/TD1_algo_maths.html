@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html lang="fr"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title>Test Dessin</title> 
+    </head> 
+    <body>  
+<p>Dessinez avec vos clicks !</p>
+        <canvas id="mon_canvas" style="border:1px dashed blueviolet" width="1050" height="1050" onclick="cliquer(event)" > 
+        </canvas>
+        <script type="text/javascript">
+            var X1;
+            var Y1;
+            var X2;
+            var Y2;
+            var premierpoint = false;
+        function cliquer(event){ 
+            var c = document.getElementById("mon_canvas");
+            //c.addEventListener('click', event => {
+                    if(premierpoint == false){
+                        X1 = event.offsetX;
+                        Y1 = event.offsetY;
+                        premierpoint = true;
+                    }
+
+                    else{
+                        console.log("yoyoyo");
+                        X2 = event.offsetX;
+                        Y2 = event.offsetY;
+                        premierpoint = false;
+                        var coefx = X2 - X1;
+                        var coefy = Y2 - Y1;
+                        var coef = coefy / coefx; //faux
+                    }
+                    
+                var ctx = c.getContext("2d"); 
+                console.log("X1 = "+ X1 +", Y1 = "+ Y1 );
+                console.log("X2 = "+ X2 +", Y2 = "+ Y2 );
+                console.log("coef = "+ coef );
+                ctx.beginPath();
+                ctx.moveTo(X1,Y1);
+                ctx.lineTo(X2,Y2);
+                ctx.closePath(); 
+                ctx.stroke();
+           // });
+        }
+        </script> 
+    </body> 
+</html> 

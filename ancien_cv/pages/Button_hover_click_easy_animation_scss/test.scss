@@ -1,0 +1,13 @@
+@import "variable.scss";
+@import "mixin.scss";
+
+button{
+    @include before(dashed, 8px);
+    // déclarations @mixin !!
+    &:hover{
+        @include after;
+    }
+    &:active {
+        @include click;
+      }
+}

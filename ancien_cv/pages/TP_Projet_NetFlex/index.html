@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <meta charset="author" content="SIROT Aline, GELINEAU Rémy">
+        <title>Netflex</title>
+    </head>
+    <body onload="loading()">
+        <header>
+            <span class="bouton">Selectionnez votre compte : </span>
+            <!--<form>
+                <input type="text" placeholder="Utilisateur..." id="Utilisateur" required>
+                <input type="submit" value="Envoyer" onclick="Valider()">
+            </form>-->
+            <button onclick="ID1()" id="uid1">Enfant</button>
+            <button onclick="ID2()" id="uid2">Shonen</button>
+            <button onclick="ID3()" id="uid3">Shojo</button>
+            <!--<button onclick="Reset()" id="reset">Reset</button>-->
+        </header>
+        <div class="central">
+            <div id="block1">
+                <div id="photofilm"><img src="images/bakemono.jpg"></div> <!---->
+                <div id="video1"><iframe width="560" height="315" src="https://www.youtube.com/embed/PiauQ7P7mtQ?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div id="titreetavis"><p class="red" id="titre">Bakemonogatari</p>
+                    <div id="value">
+                    <!--div qui contient les étoiles-->
+                        <div class="glob" id="originalite" >
+                            <p class="cali">Originalité du film : </p>
+                            <select id="originalite1">
+                                <option value="1">1 étoile</option>
+                                <option value="2">2 étoiles</option>
+                                <option value="3">3 étoiles</option>
+                                <option value="4">4 étoiles</option>
+                                <option value="5">5 étoiles</option>
+                            </select>
+                            <span>/5</span>
+                            
+                        </div>
+                        <div class="glob" id="qualite" >
+                            <p class="cali">Qualité du scénario : </p>
+                            <select id="qualitescenario1">
+                                <option value="1">1 étoile</option>
+                                <option value="2">2 étoiles</option>
+                                <option value="3">3 étoiles</option>
+                                <option value="4">4 étoiles</option>
+                                <option value="5">5 étoiles</option>
+                            </select>
+                            <span>/5</span>
+                              
+                        </div>
+                        <div class="glob" id="jeuacteur" >
+                            <p class="cali">Jeu des acteurs : </p>
+                            <select id="jeu1">
+                                <option value="1">1 étoile</option>
+                                <option value="2">2 étoiles</option>
+                                <option value="3">3 étoiles</option>
+                                <option value="4">4 étoiles</option>
+                                <option value="5">5 étoiles</option>
+                            </select>
+                            <span>/5</span>
+                              
+                        </div>
+                        <div class="glob" id="miseenscene" >
+                            <p class="cali">Qualité de la mise en scène : </p>
+                            <select id="qualitemiseenscene1">
+                                <option value="1">1 étoile</option>
+                                <option value="2">2 étoiles</option>
+                                <option value="3">3 étoiles</option>
+                                <option value="4">4 étoiles</option>
+                                <option value="5">5 étoiles</option>
+                            </select>
+                            <span>/5</span>
+                               
+                        </div>
+                        <div class="glob" id="qualison" >
+                            <p class="cali">Qualité de la bande son : </p>
+                            <select id="qualiteson1">
+                                <option value="1">1 étoile</option>
+                                <option value="2">2 étoiles</option>
+                                <option value="3">3 étoiles</option>
+                                <option value="4">4 étoiles</option>
+                                <option value="5">5 étoiles</option>
+                            </select>
+                            <span>/5</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="block2">
+                <div id="photofilm"><img src="images/Corpse_Party.jpg"></div> <!---->
+                <div id="video1"><iframe width="560" height="315" src="https://www.youtube.com/embed/7_hfyuBLYdQ?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div id="titreetavis"><p class="red" id="titre">Corpse Party</p>
+                    <div id="value">
+                    <!--div qui contient les étoiles-->
+                    <div class="glob" id="originalite" >
+                        <p class="cali">Originalité du film : </p>
+                        <select id="originalite2">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                        
+                    </div>
+                    <div class="glob" id="qualite" >
+                        <p class="cali">Qualité du scénario : </p>
+                        <select id="qualitescenario2">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                          
+                    </div>
+                    <div class="glob" id="jeuacteur" >
+                        <p class="cali">Jeu des acteurs : </p>
+                        <select id="jeu2">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                          
+                    </div>
+                    <div class="glob" id="miseenscene" >
+                        <p class="cali">Qualité de la mise en scène : </p>
+                        <select id="qualitemiseenscene2">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                           
+                    </div>
+                    <div class="glob" id="qualison" >
+                        <p class="cali">Qualité de la bande son : </p>
+                        <select id="qualiteson2">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="block3">
+                <div id="photofilm"><img src="images/dora_exploratrice.jpg"></div> <!---->
+                <div id="video1"><iframe width="560" height="315" src="https://www.youtube.com/embed/MvLcDeFty_c?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div id="titreetavis"><p class="red" id="titre">Dora Exploratrice</p>
+                    <div id="value">
+                    <!--div qui contient les étoiles-->
+                    <div class="glob" id="originalite" >
+                        <p class="cali">Originalité du film : </p>
+                        <select id="originalite3">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                        
+                    </div>
+                    <div class="glob" id="qualite" >
+                        <p class="cali">Qualité du scénario : </p>
+                        <select id="qualitescenario3">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                          
+                    </div>
+                    <div class="glob" id="jeuacteur" >
+                        <p class="cali">Jeu des acteurs : </p>
+                        <select id="jeu3">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                          
+                    </div>
+                    <div class="glob" id="miseenscene" >
+                        <p class="cali">Qualité de la mise en scène : </p>
+                        <select id="qualitemiseenscene3">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                           
+                    </div>
+                    <div class="glob" id="qualison" >
+                        <p class="cali">Qualité de la bande son : </p>
+                        <select id="qualiteson3">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="block4">
+                <div id="photofilm"><img src="images/fairy_tail.jpg"></div> <!---->
+                <div id="video1"><iframe width="560" height="315" src="https://www.youtube.com/embed/8EMCTHpRnJE?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div id="titreetavis"><p class="red" id="titre">Fairy Tail</p>
+                    <div id="value">
+                    <!--div qui contient les étoiles-->
+                    <div class="glob" id="originalite" >
+                        <p class="cali">Originalité du film : </p>
+                        <select id="originalite4">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                        
+                    </div>
+                    <div class="glob" id="qualite" >
+                        <p class="cali">Qualité du scénario : </p>
+                        <select id="qualitescenario4">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                          
+                    </div>
+                    <div class="glob" id="jeuacteur" >
+                        <p class="cali">Jeu des acteurs : </p>
+                        <select id="jeu4">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                          
+                    </div>
+                    <div class="glob" id="miseenscene" >
+                        <p class="cali">Qualité de la mise en scène : </p>
+                        <select id="qualitemiseenscene4">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                           
+                    </div>
+                    <div class="glob" id="qualison" >
+                        <p class="cali">Qualité de la bande son : </p>
+                        <select id="qualiteson4">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="block5">
+                <div id="photofilm"><img src="images/gakkou_gurashi.jpg"></div> <!---->
+                <div id="video1"><iframe width="560" height="315" src="https://www.youtube.com/embed/7Xaa7vSav-E?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div id="titreetavis"><p class="red" id="titre">Gakkou Gurashi</p>
+                    <div id="value">
+                    <!--div qui contient les étoiles-->
+                    <div class="glob" id="originalite" >
+                        <p class="cali">Originalité du film : </p>
+                        <select id="originalite5">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                        
+                    </div>
+                    <div class="glob" id="qualite" >
+                        <p class="cali">Qualité du scénario : </p>
+                        <select id="qualitescenario5">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                          
+                    </div>
+                    <div class="glob" id="jeuacteur" >
+                        <p class="cali">Jeu des acteurs : </p>
+                        <select id="jeu5">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                          
+                    </div>
+                    <div class="glob" id="miseenscene" >
+                        <p class="cali">Qualité de la mise en scène : </p>
+                        <select id="qualitemiseenscene5">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                           
+                    </div>
+                    <div class="glob" id="qualison" >
+                        <p class="cali">Qualité de la bande son : </p>
+                        <select id="qualiteson5">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="block6">
+                <div id="photofilm"><img src="images/hxh.jpg"></div> <!---->
+                <div id="video1"><iframe width="560" height="315" src="https://www.youtube.com/embed/faqmNf_fZlE?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div id="titreetavis"><p class="red" id="titre">Hunter X Hunter</p>
+                    <div id="value">
+                    <!--div qui contient les étoiles-->
+                    <div class="glob" id="originalite" >
+                        <p class="cali">Originalité du film : </p>
+                        <select id="originalite6">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                        
+                    </div>
+                    <div class="glob" id="qualite" >
+                        <p class="cali">Qualité du scénario : </p>
+                        <select id="qualitescenario6">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                          
+                    </div>
+                    <div class="glob" id="jeuacteur" >
+                        <p class="cali">Jeu des acteurs : </p>
+                        <select id="jeu6">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                          
+                    </div>
+                    <div class="glob" id="miseenscene" >
+                        <p class="cali">Qualité de la mise en scène : </p>
+                        <select id="qualitemiseenscene6">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                           
+                    </div>
+                    <div class="glob" id="qualison" >
+                        <p class="cali">Qualité de la bande son : </p>
+                        <select id="qualiteson6">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="block7">
+                <div id="photofilm"><img src="images/kabaneri.jpg"></div> <!---->
+                <div id="video1"><iframe width="560" height="315" src="https://www.youtube.com/embed/0w-9u4SxWwc?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div id="titreetavis"><p class="red" id="titre">Kabaneri of the Iron Fortress</p>
+                    <div id="value">
+                    <!--div qui contient les étoiles-->
+                    <div class="glob" id="originalite" >
+                        <p class="cali">Originalité du film : </p>
+                        <select id="originalite7">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                        
+                    </div>
+                    <div class="glob" id="qualite" >
+                        <p class="cali">Qualité du scénario : </p>
+                        <select id="qualitescenario7">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                          
+                    </div>
+                    <div class="glob" id="jeuacteur" >
+                        <p class="cali">Jeu des acteurs : </p>
+                        <select id="jeu7">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                          
+                    </div>
+                    <div class="glob" id="miseenscene" >
+                        <p class="cali">Qualité de la mise en scène : </p>
+                        <select id="qualitemiseenscene7">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                           
+                    </div>
+                    <div class="glob" id="qualison" >
+                        <p class="cali">Qualité de la bande son : </p>
+                        <select id="qualiteson7">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="block8">
+                <div id="photofilm"><img src="images/nisekoi.jpg"></div> <!---->
+                <div id="video1"><iframe width="560" height="315" src="https://www.youtube.com/embed/tI0EjXQo_Oc?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div id="titreetavis"><p class="red" id="titre">Nisekoi</p>
+                    <div id="value">
+                    <!--div qui contient les étoiles-->
+                    <div class="glob" id="originalite" >
+                        <p class="cali">Originalité du film : </p>
+                        <select id="originalite8">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                        
+                    </div>
+                    <div class="glob" id="qualite" >
+                        <p class="cali">Qualité du scénario : </p>
+                        <select id="qualitescenario8">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                          
+                    </div>
+                    <div class="glob" id="jeuacteur" >
+                        <p class="cali">Jeu des acteurs : </p>
+                        <select id="jeu8">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                          
+                    </div>
+                    <div class="glob" id="miseenscene" >
+                        <p class="cali">Qualité de la mise en scène : </p>
+                        <select id="qualitemiseenscene8">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                           
+                    </div>
+                    <div class="glob" id="qualison" >
+                        <p class="cali">Qualité de la bande son : </p>
+                        <select id="qualiteson8">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="block9">
+                <div id="photofilm"><img src="images/sakura_cc.jpg"></div> <!---->
+                <div id="video1"><iframe width="560" height="315" src="https://www.youtube.com/embed/YHnSjNMvmfg?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div id="titreetavis"><p class="red" id="titre">Sakura Card Captor</p>
+                    <div id="value">
+                    <!--div qui contient les étoiles-->
+                    <div class="glob" id="originalite" >
+                        <p class="cali">Originalité du film : </p>
+                        <select id="originalite9">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                        
+                    </div>
+                    <div class="glob" id="qualite" >
+                        <p class="cali">Qualité du scénario : </p>
+                        <select id="qualitescenario9">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                          
+                    </div>
+                    <div class="glob" id="jeuacteur" >
+                        <p class="cali">Jeu des acteurs : </p>
+                        <select id="jeu9">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                          
+                    </div>
+                    <div class="glob" id="miseenscene" >
+                        <p class="cali">Qualité de la mise en scène : </p>
+                        <select id="qualitemiseenscene9">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                           
+                    </div>
+                    <div class="glob" id="qualison" >
+                        <p class="cali">Qualité de la bande son : </p>
+                        <select id="qualiteson9">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="block10">
+                <div id="photofilm"><img src="images/snk.jpg"></div> <!---->
+                <div id="video1"><iframe width="560" height="315" src="https://www.youtube.com/embed/AgBUP8TJqV8?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div id="titreetavis"><p class="red" id="titre">L'attaque des Titans</p>
+                    <div id="value">
+                    <!--div qui contient les étoiles-->
+                    <div class="glob" id="originalite" >
+                        <p class="cali">Originalité du film : </p>
+                        <select id="originalite10">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                        
+                    </div>
+                    <div class="glob" id="qualite" >
+                        <p class="cali">Qualité du scénario : </p>
+                        <select id="qualitescenario10">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                          
+                    </div>
+                    <div class="glob" id="jeuacteur" >
+                        <p class="cali">Jeu des acteurs : </p>
+                        <select id="jeu10">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                          
+                    </div>
+                    <div class="glob" id="miseenscene" >
+                        <p class="cali">Qualité de la mise en scène : </p>
+                        <select id="qualitemiseenscene10">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                           
+                    </div>
+                    <div class="glob" id="qualison" >
+                        <p class="cali">Qualité de la bande son : </p>
+                        <select id="qualiteson10">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="block11">
+                <div id="photofilm"><img src="images/tokyo_g.jpg"></div> <!---->
+                <div id="video1"><iframe width="560" height="315" src="https://www.youtube.com/embed/uMeR2W19wT0?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div id="titreetavis"><p class="red" id="titre">Tokyo Ghoul</p>
+                    <div id="value">
+                    <!--div qui contient les étoiles-->
+                    <div class="glob" id="originalite" >
+                        <p class="cali">Originalité du film : </p>
+                        <select id="originalite11">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                        
+                    </div>
+                    <div class="glob" id="qualite" >
+                        <p class="cali">Qualité du scénario : </p>
+                        <select id="qualitescenario11">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                          
+                    </div>
+                    <div class="glob" id="jeuacteur" >
+                        <p class="cali">Jeu des acteurs : </p>
+                        <select id="jeu11">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                          
+                    </div>
+                    <div class="glob" id="miseenscene" >
+                        <p class="cali">Qualité de la mise en scène : </p>
+                        <select id="qualitemiseenscene11">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                           
+                    </div>
+                    <div class="glob" id="qualison" >
+                        <p class="cali">Qualité de la bande son : </p>
+                        <select id="qualiteson11">
+                            <option value="1">1 étoile</option>
+                            <option value="2">2 étoiles</option>
+                            <option value="3">3 étoiles</option>
+                            <option value="4">4 étoiles</option>
+                            <option value="5">5 étoiles</option>
+                        </select>
+                        <span>/5</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="list" id="listfilm1">
+            <div onclick="film9()" id="film9"></div>
+            <div onclick="film1()" id="film1"></div>
+            <div onclick="film8()" id="film8"></div>
+            <div onclick="film3()" id="film3"></div>
+            <div onclick="film6()" id="film6"></div>
+        </div>
+        <div class="list" id="listfilm2">
+            <div onclick="film6()" id="film6"></div>
+            <div onclick="film11()" id="film11"></div>
+            <div onclick="film7()" id="film7"></div>
+            <div onclick="film2()" id="film2"></div>
+            <div onclick="film10()" id="film10"></div>
+        </div>
+        <div class="list" id="listfilm3">
+            <div onclick="film1()" id="film1"></div>
+            <div onclick="film5()" id="film5"></div>
+            <div onclick="film8()" id="film8"></div>
+            <div onclick="film4()" id="film4"></div>
+            <div onclick="film9()" id="film9"></div>
+            
+        </div>
+        
+
+        <footer>
+            <p class="foot">Tous Droits Réservés 2022 - © SIROT Aline et GELINEAU Rémy</p>
+        </footer>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
+

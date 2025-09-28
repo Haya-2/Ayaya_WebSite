@@ -1,0 +1,348 @@
+@import "variable.scss";
+ 
+html {
+    body {
+        margin: 0;
+        width: 100%;
+        height: min-content;
+    }
+}
+
+header {
+    width: 98%;
+    height: 75px;
+    padding: 1%;
+    background-color: $dark;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+select {
+    height: 25px;
+    margin-top: 15px;
+}
+
+span {
+    margin-top: 18px;
+}
+
+button {
+    width: 150px;
+    height: 60px;
+    background-color: $redpastel;
+    border-color: $red;
+    border-radius: 10px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.bouton {
+    width: 200px;
+    height: 60px;
+    color: $bluepastel;
+}
+
+.central {
+    color: $bluepastel;
+    display: flex;
+    width: 100%;
+    height: 66%;
+    background-color: $bluedark;
+}
+ 
+#photofilm {
+    margin: 3%;
+    width: 20%;
+}
+ 
+img {
+    height: 100%;
+    width: 100%;
+}
+ 
+#video1 {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+    width: 50%;
+}
+ 
+.red {
+    color: $redpastel;
+    text-decoration: double;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+ 
+#titreetavis {
+    padding-top: 3%;
+    width: 25%;
+    background-color: $blue;
+    text-align: center;
+}
+ 
+.glob {
+    display: flex;
+    padding-top: 5px;
+    padding-left: 3%;
+    width: 95%;
+}
+ 
+.cali {
+    height: 25px;
+    font-size: 18px;
+}
+
+/*
+.tde {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}*/
+
+.tde {
+    height: 35px;
+    width: 175px;
+    
+    text-align: center;
+    cursor: pointer;
+}
+ 
+#value {
+    padding-top: 3%;
+
+}
+
+/*Déclaration blocks*/
+
+#block1 {
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+}
+
+#block2 {
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+}
+
+#block3 {
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+}
+#block4 {
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+}
+
+#block5 {
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+}
+
+#block6 {
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+}
+
+#block7 {
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+}
+
+#block8 {
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+}
+
+#block9 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#block10 {
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+}
+
+#block11 {
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+}
+
+
+/*Déclaration films*/
+
+#film1 {
+    background-image: url(images/bakemono.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 500px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#film2 {
+    background-image: url(images/Corpse_Party.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 20%;
+    min-height: 500px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#film3 {
+    background-image: url(images/dora_exploratrice.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 500px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#film4 {
+    background-image: url(images/fairy_tail.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 500px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#film5 {
+    background-image: url(images/gakkou_gurashi.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 500px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#film6 {
+    background-image: url(images/hxh.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 500px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#film7 {
+    background-image: url(images/kabaneri.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 500px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#film8 {
+    background-image: url(images/nisekoi.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 500px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#film9 {
+    background-image: url(images/sakura_cc.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 500px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#film10 {
+    background-image: url(images/snk.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 500px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#film11 {
+    background-image: url(images/tokyo_g.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 500px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.list {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#listfilm1 {
+    display: none;
+}
+
+#listfilm2 {
+    display: none;
+}
+
+#listfilm3 {
+    display: none;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: $bluedark;
+    color: $bluepastel;
+}
+
+.foot{
+    padding: 1%;
+    margin :0;
+}
+ 
+/*#value {
+    height:20px; 
+    width: 0px VALEUR A CHOISIR PAR PHP GET; 
+    background:#ffa600;
+}*/

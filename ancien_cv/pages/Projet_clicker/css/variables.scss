@@ -1,0 +1,65 @@
+$main : #efa8c7;
+$rosemid : #ff5ea6;
+$rosef : #ff0070;
+$bleupastel : #D7FEF9;
+$bleuf : #56ffe8;
+//$bleuback : #0696af; //Inutilisé
+$jaunepastel : #ffed9a;
+$jaunec : #fff9df;
+$jaunef : #020085;
+
+
+//Déclaratin Mixin pour boutons On / Off et Format.
+
+//Button Telephone Block
+@mixin buttelblock {
+    width: 400px;
+    height: 50px;
+    display: block;
+}
+
+//Button Telephone None
+@mixin buttelnone {
+    width: 400px;
+    height: 50px;
+    display: none;
+}
+
+//Button Ordinateur Block
+@mixin butordiblock {
+    width: 300px;
+    height: 30px;
+    display: block;
+}
+
+//Button Ordinateur None
+@mixin butordinone {
+    width: 300px;
+    height: 30px;
+    display: none;
+}
+
+//Déclarations cadres
+@mixin cadre {
+    border-style: double;
+    border-color: $rosef;
+    padding: 5px 5px 5px 5px;
+    &:hover {
+        border-style: dashed;
+        border-color: $rosemid;
+    }
+}
+
+//Déclaration générale des boutons.
+@mixin bouton {
+    border-style: solid;
+    border-color: $bleupastel;
+    padding: 5px 5px 5px 5px;
+    background-color: $jaunepastel;
+    
+    &:hover {
+        background-color: $jaunec;
+        border-style: dashed;
+        border-color: $bleuf;
+    }
+}

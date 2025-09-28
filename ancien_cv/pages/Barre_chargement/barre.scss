@@ -1,0 +1,40 @@
+@import "variablebarre.scss";
+
+@keyframes barre {
+    from {
+        background-color: $color_start;
+        width: $div_width;
+    }
+    50% {
+        background-color: $color_middle;
+        color: black;
+        width: $div_width_middle;
+    }
+    to {
+        background-color: $color_end;
+        color: $color_text;
+        width: $div_width_to;
+    }
+}
+
+.faire {
+    color: $color_text;
+    width: $div_width;
+    height: $div_height;
+    border-radius: 50px;
+    background-color: black;
+    animation-name: barre;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
