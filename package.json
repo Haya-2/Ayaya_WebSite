@@ -1,0 +1,24 @@
+{
+  "name": "ayaya_website",
+  "version": "1.0.0",
+  "description": "CV et Blog personnel d'Ayaya",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch style/scss:style/css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haya-2/Ayaya_WebSite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haya-2/Ayaya_WebSite/issues"
+  },
+  "homepage": "https://github.com/Haya-2/Ayaya_WebSite#readme",
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}

@@ -1,0 +1,23 @@
+# Node.js modules
+node_modules/
+
+# Fichiers CSS map générés par SASS
+style/css/*.css.map
+
+# Fichiers temporaires / systèmes
+.DS_Store
+Thumbs.db
+
+# Fichiers VSCode
+.vscode/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Autres fichiers temporaires
+*.tmp
+*.bak
+*.swp
+*.old
