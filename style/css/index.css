@@ -1,22 +1,22 @@
 @import url("fontawesome-all.min.css");
 @font-face {
-  font-family: "Stars";
-  src: url(Stars.ttf) format("truetype");
+  font-family: Stars;
+  src: url("Stars.ttf") format("truetype");
 }
 @font-face {
-  font-family: "AutoShel";
-  src: url(Authentic_Sheldon.ttf) format("truetype");
+  font-family: AutoShel;
+  src: url("Authentic_Sheldon.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Afterglow";
-  src: url(Afterglow_Regular.ttf) format("truetype");
+  font-family: Afterglow;
+  src: url("Afterglow_Regular.ttf") format("truetype");
 }
 html body {
   padding: 0;
   margin: 0;
   height: 250%;
   color: #495867;
-  font-family: "Stars", cursive;
+  font-family: Stars, cursive;
 }
 
 header {
