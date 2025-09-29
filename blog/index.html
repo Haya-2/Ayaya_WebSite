@@ -1,24 +1,102 @@
 <!DOCTYPE html>
 <html lang="fr">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Blog à Ayaya</title>
+      <meta charset="descriptions" content="" />
+      <meta charset="keywords" content="" />
+      <meta charset="author" content="Aline SIROT" />
+      <link rel="stylesheet" type="text/css" href="style/css/index.css" />
+      <link rel="icon" href="" />
+   </head>
 
-<head id="head">
-   <!-- Le contenu sera injecté par JS -->
-</head>
+   <body>
+      <!-- Header -->
+      <header>
+         <nav>
+            <div class="logo">
+               <a href="index.html">Ayaya Blog</a>
+            </div>
+            <ul class="nav-links" id="nav-links">
+               <li><a href="index.html">Accueil</a></li>
+               <li><a href="pages/liste_blog.html">Articles</a></li>
+               <li><a href="pages/about.html">À propos</a></li>
+               <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+         </nav>
+      </header>
 
-<body>
-   <header>
-      <nav>
+      <main>
+         <!-- Section d'introduction -->
+         <section class="intro">
+            <h1><i class="fas fa-home"></i> Bienvenue sur mon site</h1>
+            <p>Je suis Aline, passionnée de développement web, de design et de création.</p>
+         </section>
 
-      </nav>
-   </header>
+         <!-- Section vers les différentes parties -->
+         <section class="home-links">
+            <div class="card">
+               <h2><i class="fas fa-user"></i> À propos</h2>
+               <p>Découvrez qui je suis, mes passions et mes objectifs.</p>
+               <a href="pages/about.html" class="btn">En savoir plus →</a>
+            </div>
 
-   <main>
-   </main>
+            <div class="card">
+               <h2><i class="fas fa-blog"></i> Blog</h2>
+               <p>Lisez mes articles sur mes projets, mes réflexions et mes inspirations.</p>
+               <a href="pages/liste_blog.html" class="btn">Accéder au blog →</a>
+            </div>
 
-   <!-- Footer -->
-   <div id="footer"></div>
+            <div class="card">
+               <h2><i class="fas fa-address-book"></i> Contact</h2>
+               <p>Envie d’échanger ? Retrouvez-moi sur mes réseaux sociaux.</p>
+               <a href="pages/contact.html" class="btn">Me contacter →</a>
+            </div>
+         </section>
+      </main>
 
-</body>
-<script src="js/include.js"></script>
+      <!-- Footer -->
+      <footer id="footer">
+         <section>
+            <!-- Icons -->
+            <ul class="icons">
+               <li>
+                  <a href="https://twitter.com/AyayaHaya2" target="_blank" class="btn icon brands fab fa-twitter"><span class="label">&nbsp;Twitter</span></a>
+               </li>
+               <li>
+                  <a href="https://www.instagram.com/haya2_pallyly/" target="_blank" class="btn icon brands fab fa-instagram"><span class="label">&nbsp;Instagram</span></a>
+               </li>
+               <li>
+                  <a href="https://github.com/Haya-2/" target="_blank" class="btn icon brands fab fa-github"><span class="label">&nbsp;GitHub</span></a>
+               </li>
+               <li>
+                  <a href="https://www.linkedin.com/in/aline-sirot-6951701ba" target="_blank" class="btn icon brands fab fa-linkedin-in"><span class="label">&nbsp;LinkedIn</span></a>
+               </li>
+            </ul>
 
+            <!-- Copyright -->
+            <div class="copyright">
+               <p>&copy; Aline SIROT. Tous droits réservés</p>
+               <p>2025/2026</p>
+            </div>
+         </section>
+      </footer>
+
+      <script>
+         const menuToggle = document.getElementById("mobile-menu");
+         const navLinks = document.getElementById("nav-links");
+
+         if (menuToggle && navLinks) {
+            menuToggle.addEventListener("click", () => {
+               navLinks.classList.toggle("active");
+            });
+         }
+      </script>
+   </body>
 </html>

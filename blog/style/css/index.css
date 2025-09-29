@@ -25,36 +25,118 @@ header {
 }
 header nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .logo a {
+  color: #f7f7ff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 header nav .nav-links {
   list-style: none;
   display: flex;
   gap: 2em;
-  padding: 0;
-  margin: 0;
 }
 header nav .nav-links li a {
   color: #f7f7ff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
   transition: color 0.3s;
 }
 header nav .nav-links li a:hover {
   color: #bdd5ea;
 }
+header nav .menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+header nav .menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: #f7f7ff;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  header nav .nav-links {
+    font-size: larger;
+    width: -webkit-fill-available;
+    display: none;
+    flex-direction: column;
+    gap: 2em;
+    background: #577399;
+    position: absolute;
+    top: 2.5em;
+    left: 0;
+    padding: 1em;
+    align-items: center;
+  }
+  header nav .nav-links li {
+    padding: 1em;
+  }
+  header nav .nav-links.active {
+    display: flex;
+  }
+  header nav .menu-toggle {
+    display: flex;
+  }
+}
 
 main {
   padding: 2em;
-  text-align: center;
+  text-align: justify;
 }
-main .welcome h1 {
+main .welcome h1,
+main .intro h1,
+main .home-links h1,
+main .contact-info h1,
+main .about h1,
+main .blog-intro h1,
+main .blog-articles h1 {
   font-size: 2.5rem;
-  color: #bdd5ea;
+  color: #495867;
 }
-main .welcome p {
+main .welcome p,
+main .intro p,
+main .home-links p,
+main .contact-info p,
+main .about p,
+main .blog-intro p,
+main .blog-articles p {
   font-size: 1.2rem;
   color: #577399;
+}
+main .welcome a,
+main .intro a,
+main .home-links a,
+main .contact-info a,
+main .about a,
+main .blog-intro a,
+main .blog-articles a {
+  color: #fe5f55;
+}
+@media (max-width: 768px) {
+  main .welcome h1,
+  main .intro h1,
+  main .home-links h1,
+  main .contact-info h1,
+  main .about h1,
+  main .blog-intro h1,
+  main .blog-articles h1 {
+    font-size: 1.8rem;
+  }
+  main .welcome p,
+  main .intro p,
+  main .home-links p,
+  main .contact-info p,
+  main .about p,
+  main .blog-intro p,
+  main .blog-articles p {
+    font-size: 1rem;
+  }
 }
 
 footer {

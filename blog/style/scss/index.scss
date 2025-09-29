@@ -2,98 +2,165 @@
 
 @use "_colors_fonts" as cf;
 @use "_reset_css" as reset;
-
 @import url("fontawesome-all.min.css");
 
 // -----------------------------
 // Header
 // -----------------------------
 header {
-    background: cf.$dark;
-    padding: 1em;
+   background: cf.$dark;
+   padding: 1em;
 
-    nav {
-        display: flex;
-        justify-content: center;
+   nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 2em;
-            padding: 0;
-            margin: 0;
+      .logo a {
+         color: cf.$light;
+         font-weight: bold;
+         text-decoration: none;
+         font-size: 1.5rem;
+      }
 
-            li a {
-                color: cf.$light;
-                text-decoration: none;
-                font-weight: bold;
-                transition: color 0.3s;
+      .nav-links {
+         list-style: none;
+         display: flex;
+         gap: 2em;
 
-                &:hover {
-                    color: cf.$bleu;
-                }
+         li a {
+            color: cf.$light;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+
+            &:hover {
+               color: cf.$bleu;
             }
-        }
-    }
+         }
+      }
+
+      .menu-toggle {
+         display: none;
+         flex-direction: column;
+         cursor: pointer;
+
+         span {
+            width: 25px;
+            height: 3px;
+            background: cf.$light;
+            margin: 4px 0;
+            transition: 0.3s;
+         }
+      }
+   }
+
+   @media (max-width: 768px) {
+      nav {
+         .nav-links {
+            font-size: larger;
+            width: -webkit-fill-available;
+            display: none;
+            flex-direction: column;
+            gap: 2em;
+            background: cf.$dark;
+            position: absolute;
+            top: 2.5em;
+            left: 0;
+            padding: 1em;
+            align-items: center;
+            li {
+               padding: 1em;
+            }
+         }
+
+         .nav-links.active {
+            display: flex;
+         }
+
+         .menu-toggle {
+            display: flex;
+         }
+      }
+   }
 }
 
 // -----------------------------
 // Main
 // -----------------------------
 main {
-    padding: 2em;
-    text-align: center;
+   padding: 2em;
+   text-align: justify;
 
-    .welcome {
-        h1 {
-            font-size: 2.5rem;
-            color: cf.$bleu;
-        }
+   .welcome,
+   .intro,
+   .home-links,
+   .contact-info,
+   .about,
+   .blog-intro,
+   .blog-articles {
+      h1 {
+         font-size: 2.5rem;
+         color: cf.$darker;
+      }
 
-        p {
-            font-size: 1.2rem;
-            color: cf.$dark;
-        }
-    }
+      p {
+         font-size: 1.2rem;
+         color: cf.$dark;
+      }
+
+      a {
+         color: cf.$rouge;
+      }
+
+      @media (max-width: 768px) {
+         h1 {
+            font-size: 1.8rem;
+         }
+         p {
+            font-size: 1rem;
+         }
+      }
+   }
 }
 
 // -----------------------------
 // Footer
 // -----------------------------
 footer {
-    background: cf.$bleu;
-    color: cf.$dark;
-    padding: 1em;
-    text-align: center;
+   background: cf.$bleu;
+   color: cf.$dark;
+   padding: 1em;
+   text-align: center;
 
-    section {
-        text-align: center;
-    }
+   section {
+      text-align: center;
+   }
 
-    .icons {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        margin: 10px 0;
-        padding-bottom: 10px;
-        color: cf.$rouge;
+   .icons {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 10px 0;
+      padding-bottom: 10px;
+      color: cf.$rouge;
 
-        li {
-            margin: 0 10px;
+      li {
+         margin: 0 10px;
 
-            a {
-                text-decoration: none;
-                color: cf.$rouge;
+         a {
+            text-decoration: none;
+            color: cf.$rouge;
 
-                &:hover {
-                    color: cf.$dark;
-                }
+            &:hover {
+               color: cf.$dark;
             }
-        }
-    }
+         }
+      }
+   }
 
-    .copyright {
-        color: cf.$darker;
-    }
+   .copyright {
+      color: cf.$darker;
+   }
 }
