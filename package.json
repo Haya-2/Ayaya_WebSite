@@ -8,7 +8,7 @@
         "test": "npm run lint:js && npm run lint:css",
         "lint:js": "eslint . --ignore-pattern ancien_cv",
         "lint:css": "stylelint \"style/scss/**/*.scss\"",
-        "sass": "sass --watch style/scss:style/css --style expanded"
+        "sass": "sass --watch style/scss:style/css blog/style/scss:blog/style/css cv/style/scss:cv/style/css --style expanded"
     },
     "repository": {
         "type": "git",
