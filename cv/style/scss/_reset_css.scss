@@ -1,11 +1,11 @@
 @use "_colors_fonts" as cf;
 
 html {
-  body {
-    padding: 0;
-    margin: 0;
-    height: 250%;
-    color: cf.$darker;
-    font-family: Stars, cursive;
-  }
+   body {
+      padding: 0;
+      margin: 0;
+      height: 250%;
+      color: cf.$darker;
+      font-family: Stars, cursive;
+   }
 }
