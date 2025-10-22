@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("fontawesome-all.min.css");
 @font-face {
   font-family: Stars;
@@ -17,6 +18,9 @@ html body {
   height: 250%;
   color: #495867;
   font-family: Stars, cursive;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -139,6 +143,74 @@ main .blog-articles a {
   }
 }
 
+main.article-page {
+  padding: 0;
+}
+
+.article-page .entete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #bdd5ea;
+  padding: 1em;
+  color: #fe5f55;
+}
+.article-page .entete .date {
+  color: #f98d8b;
+}
+.article-page .content .plan,
+.article-page .content .references {
+  text-align: left;
+}
+.article-page .content .plan a,
+.article-page .content .references a {
+  color: #f98d8b;
+}
+.article-page .content .plan a:hover,
+.article-page .content .references a:hover {
+  color: #577399;
+}
+.article-page .content h3 {
+  text-decoration: underline;
+}
+.article-page .content {
+  padding: 2em;
+}
+.article-page .content ::marker {
+  display: none;
+}
+.article-page .content ul {
+  list-style: none; /* enlève les puces natives */
+  padding: 0;
+  margin: 0;
+}
+.article-page .content ul li {
+  position: relative;
+  padding-left: 1.5em;
+}
+.article-page .content ul li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f005"; /* fa-star */
+  font-weight: 900;
+  color: #fe5f55;
+  position: absolute;
+  left: 0;
+  top: 0.23em;
+}
+
+.article-footer {
+  background-color: #fbdadc;
+  padding: 1em;
+  text-align: center;
+}
+.article-footer a {
+  text-decoration: none;
+  color: #577399;
+}
+.article-footer a:hover {
+  color: #fe5f55;
+}
+
 footer {
   background: #bdd5ea;
   color: #577399;
@@ -169,6 +241,28 @@ footer .icons li a:hover {
 }
 footer .copyright {
   color: #495867;
+}
+
+/* ====== Citation ====== */
+blockquote {
+  border-left: 8px solid #f98d8b;
+  border-bottom: 8px solid #f98d8b;
+  padding-left: 1em;
+  font-style: italic;
+  color: #577399;
+  background: #fbdadc;
+  padding: 1em 1em;
+  border-radius: 11px;
+}
+blockquote cite {
+  display: block;
+  font-size: 0.9em;
+  color: #87a1c0;
+  text-align: right;
+}
+
+.align_left {
+  text-align: left;
 }
 
 /*# sourceMappingURL=index.css.map */

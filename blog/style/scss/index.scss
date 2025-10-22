@@ -125,6 +125,80 @@ main {
 }
 
 // -----------------------------
+// Articles
+// -----------------------------
+
+main.article-page {
+   padding: 0;
+}
+.article-page {
+   .entete {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: cf.$bleu;
+      padding: 1em;
+      color: cf.$rouge;
+      .date {
+         color: cf.$rose;
+      }
+   }
+
+   .content {
+      .plan,
+      .references {
+         text-align: left;
+         a {
+            color: cf.$rose;
+            &:hover {
+               color: cf.$dark;
+            }
+         }
+      }
+      h3 {
+         text-decoration: underline;
+      }
+      padding: 2em;
+      ::marker {
+         display: none;
+      }
+      ul {
+         list-style: none; /* enlève les puces natives */
+         padding: 0;
+         margin: 0;
+
+         li {
+            position: relative;
+            padding-left: 1.5em;
+         }
+
+         li::before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f005"; /* fa-star */
+            font-weight: 900;
+            color: cf.$rouge;
+            position: absolute;
+            left: 0;
+            top: 0.23em;
+         }
+      }
+   }
+}
+.article-footer {
+   background-color: cf.$lightrose;
+   padding: 1em;
+   text-align: center;
+   a {
+      text-decoration: none;
+      color: cf.$dark;
+
+      &:hover {
+         color: cf.$rouge;
+      }
+   }
+}
+
+// -----------------------------
 // Footer
 // -----------------------------
 footer {
@@ -163,4 +237,27 @@ footer {
    .copyright {
       color: cf.$darker;
    }
+}
+
+/* ====== Citation ====== */
+blockquote {
+   border-left: 8px solid cf.$rose;
+   border-bottom: 8px solid cf.$rose;
+   padding-left: 1em;
+   font-style: italic;
+   color: cf.$dark;
+   background: cf.$lightrose;
+   padding: 1em 1em;
+   border-radius: 11px;
+
+   cite {
+      display: block;
+      font-size: 0.9em;
+      color: cf.$bleufonce;
+      text-align: right;
+   }
+}
+
+.align_left {
+   text-align: left;
 }
