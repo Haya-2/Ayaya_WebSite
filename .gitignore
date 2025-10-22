@@ -1,5 +1,7 @@
 # Node.js modules
 node_modules/
+vendor/
+.env
 
 # Fichiers CSS map générés par SASS
 style/css/*.css.map
@@ -15,6 +17,7 @@ Thumbs.db
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.log
 
 # Autres fichiers temporaires
 *.tmp
